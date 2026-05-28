@@ -67,6 +67,23 @@ const translations = {
         leadResponseRate: 'Lead-Reaktionsquote',
         prospectResponseRate: 'Interessenten-Reaktionsquote',
         month: 'Monat'
+    },
+    hi: {
+        title: 'लीड प्रिडिक्टर',
+        language: 'भाषा',
+        currency: 'मुद्रा',
+        campaignStart: 'अभियान शुरुआत',
+        campaignEnd: 'अभियान अंत',
+        totalRevenue: 'कुल राजस्व',
+        avgOrderValue: 'औसत ऑर्डर मूल्य',
+        projects: 'परियोजनाएं',
+        leads: 'लीड्स',
+        customers: 'ग्राहक',
+        distribution: 'वितरण',
+        prospects: 'संभावनाएं',
+        leadResponseRate: 'लीड प्रतिक्रिया दर',
+        prospectResponseRate: 'संभावना प्रतिक्रिया दर',
+        month: 'महीना'
     }
 };
 
@@ -221,7 +238,8 @@ document.getElementById('language').addEventListener('change', (e) => {
         '🇺🇸 English': 'en',
         '🇪🇸 Español': 'es',
         '🇫🇷 Français': 'fr',
-        '🇩🇪 Deutsch': 'de'
+        '🇩🇪 Deutsch': 'de',
+        '🇮🇳 हिंदी': 'hi'
     }[e.target.value];
     
     if (langCode) {
