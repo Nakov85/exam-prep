@@ -86,20 +86,20 @@ const translations = {
         month: 'महीना'
     },
     bg: {
-        title: 'Предсказатель на лидове',
+        title: 'Предсказател на лидове',
         language: 'Език',
         currency: 'Валута',
-        campaignStart: 'Начало на кампания',
-        campaignEnd: 'Край на кампания',
-        totalRevenue: 'Общо приходи',
-        avgOrderValue: 'Средна стойност на поръчка',
+        campaignStart: 'Начало на кампанията',
+        campaignEnd: 'Край на кампанията',
+        totalRevenue: 'Общи приходи',
+        avgOrderValue: 'Средна цена на поръчка',
         projects: 'Проекти',
         leads: 'Потенциални клиенти',
         customers: 'Клиенти',
         distribution: 'Разпределение',
         prospects: 'Перспективи',
-        leadResponseRate: 'Процент на отговор на лидове',
-        prospectResponseRate: 'Процент на отговор на перспективи',
+        leadResponseRate: 'Степен на отговор на клиентите',
+        prospectResponseRate: 'Степен на отговор на перспективите',
         month: 'Месец'
     }
 };
