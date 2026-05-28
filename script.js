@@ -24,9 +24,28 @@ function initChart() {
         const container = document.createElement('div');
         container.className = 'chart-bar-container';
 
-        const bar = document.createElement('div');
-        bar.className = 'chart-bar';
-        bar.style.width = (item.prospects / maxValue * 100) + '%';
+        const total = item.prospects + item.leads + item.customers;
+        const prospectPercent = (item.prospects / total) * 100;
+        const leadPercent = (item.leads / total) * 100;
+        const customerPercent = (item.customers / total) * 100;
+
+        // Prospects segment (light gray)
+        const prospectSegment = document.createElement('div');
+        prospectSegment.className = 'chart-bar-segment prospects';
+        prospectSegment.style.width = prospectPercent + '%';
+        prospectSegment.setAttribute('data-label', `Prospects: ${item.prospects}`);
+
+        // Leads segment (medium gray)
+        const leadSegment = document.createElement('div');
+        leadSegment.className = 'chart-bar-segment leads';
+        leadSegment.style.width = leadPercent + '%';
+        leadSegment.setAttribute('data-label', `Leads: ${item.leads}`);
+
+        // Customers segment (dark gray)
+        const customerSegment = document.createElement('div');
+        customerSegment.className = 'chart-bar-segment customers';
+        customerSegment.style.width = customerPercent + '%';
+        customerSegment.setAttribute('data-label', `Customers: ${item.customers}`);
 
         const tooltip = document.createElement('div');
         tooltip.className = 'chart-tooltip';
@@ -35,8 +54,10 @@ function initChart() {
             + `<div>Leads: ${item.leads}</div>`
             + `<div>Customers: ${item.customers}</div>`;
 
-        bar.appendChild(tooltip);
-        container.appendChild(bar);
+        prospectSegment.appendChild(tooltip);
+        container.appendChild(prospectSegment);
+        container.appendChild(leadSegment);
+        container.appendChild(customerSegment);
         row.appendChild(label);
         row.appendChild(container);
         chartContent.appendChild(row);
