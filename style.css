@@ -139,7 +139,7 @@ body {
 
 .metric-progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #6b9bd1 0%, #4a7cb0 100%);
+    background: linear-gradient(90deg, #888888 0%, #666666 100%);
     border-radius: 3px;
 }
 
@@ -193,12 +193,12 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .chart-bar {
     height: 100%;
-    background: linear-gradient(90deg, #6b9bd1 0%, #4a7cb0 100%);
+    background: linear-gradient(90deg, #888888 0%, #666666 100%);
     border-radius: 4px;
     position: relative;
     cursor: pointer;
@@ -215,17 +215,18 @@ body {
 
 .chart-tooltip {
     position: absolute;
-    right: -120px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: -180px;
+    top: -60px;
     background-color: #0a0f18;
     border: 1px solid #3a4f6f;
     border-radius: 4px;
-    padding: 10px 12px;
+    padding: 12px 14px;
     font-size: 12px;
-    white-space: nowrap;
+    line-height: 1.6;
     display: none;
     z-index: 10;
+    width: 160px;
+    word-wrap: break-word;
 }
 
 .chart-bar:hover .chart-tooltip {
@@ -273,7 +274,7 @@ body {
 .slider-value {
     font-size: 14px;
     font-weight: 600;
-    color: #6b9bd1;
+    color: #888888;
 }
 
 .slider {
@@ -293,31 +294,31 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #6b9bd1;
+    background: #888888;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(107, 155, 209, 0.4);
+    box-shadow: 0 2px 8px rgba(136, 136, 136, 0.4);
     transition: all 0.2s ease;
 }
 
 .slider::-webkit-slider-thumb:hover {
-    background: #7ba9d9;
-    box-shadow: 0 2px 12px rgba(107, 155, 209, 0.6);
+    background: #999999;
+    box-shadow: 0 2px 12px rgba(136, 136, 136, 0.6);
 }
 
 .slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #6b9bd1;
+    background: #888888;
     cursor: pointer;
     border: none;
-    box-shadow: 0 2px 8px rgba(107, 155, 209, 0.4);
+    box-shadow: 0 2px 8px rgba(136, 136, 136, 0.4);
     transition: all 0.2s ease;
 }
 
 .slider::-moz-range-thumb:hover {
-    background: #7ba9d9;
-    box-shadow: 0 2px 12px rgba(107, 155, 209, 0.6);
+    background: #999999;
+    box-shadow: 0 2px 12px rgba(136, 136, 136, 0.6);
 }
 
 /* Scrollbar */
