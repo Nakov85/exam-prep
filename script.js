@@ -84,6 +84,23 @@ const translations = {
         leadResponseRate: 'लीड प्रतिक्रिया दर',
         prospectResponseRate: 'संभावना प्रतिक्रिया दर',
         month: 'महीना'
+    },
+    bg: {
+        title: 'Предсказател на лидове',
+        language: 'Език',
+        currency: 'Валута',
+        campaignStart: 'Начало на кампанията',
+        campaignEnd: 'Край на кампанията',
+        totalRevenue: 'Общи приходи',
+        avgOrderValue: 'Средна цена на поръчка',
+        projects: 'Проекти',
+        leads: 'Потенциални клиенти',
+        customers: 'Клиенти',
+        distribution: 'Разпределение',
+        prospects: 'Перспективи',
+        leadResponseRate: 'Степен на отговор на клиентите',
+        prospectResponseRate: 'Степен на отговор на перспективите',
+        month: 'Месец'
     }
 };
 
@@ -239,7 +256,8 @@ document.getElementById('language').addEventListener('change', (e) => {
         '🇪🇸 Español': 'es',
         '🇫🇷 Français': 'fr',
         '🇩🇪 Deutsch': 'de',
-        '🇮🇳 हिंदी': 'hi'
+        '🇮🇳 हिंदी': 'hi',
+        '🇧🇬 Български': 'bg'
     }[e.target.value];
     
     if (langCode) {
